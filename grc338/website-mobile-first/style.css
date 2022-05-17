@@ -1,0 +1,138 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} 
+
+img {
+    width: 100%; 
+    display:block;
+}
+
+body{
+  background-color: rgb(250,250,250);  
+  color: rgb(41,41,41);
+  line-height: 140%;
+  font-family:sans-serif;  
+  font-weight: 400;  
+  font-style: normal;
+}
+
+h1 {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 110%;
+    width: 3em;
+    font-size: 2.5em;
+    padding: 1rem 1.5rem 1rem;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(194,171,66);
+    font-size: 4em;
+	padding: 2rem 1rem 1rem;
+    font-family: strumpf-std-contour, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    margin: 1rem 1rem 0.5rem; 
+	padding-top: 0.5rem;
+	font-size: 1.7em;
+	color: rgb(131, 80, 25);
+	font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin: 0rem 1rem 1rem; 
+	font-size: 1em;
+	color: rgb(194,171,66);
+	font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h5 {
+    margin: 1rem 1rem 1rem; 
+	padding-top: 0.5rem;
+	font-size: 1em;
+	color: rgb(131, 80, 25);
+	font-family: josefin-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+p{
+    margin: 1rem 1rem 2.5rem;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+figcaption {
+    margin: 1rem 1rem 1rem; 
+	padding-top: 0.5rem;
+    line-height: 150%;
+	font-size: 1em;
+    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: italic;
+}
+
+footer {
+    background-color:rgb(237,141,52);
+    color: rgb(248, 222, 191);
+	padding: 1rem 1rem 1rem;
+    font-size: 1em;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    display:inline;
+    margin: 1rem 1rem 1rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li a{
+    color: rgb(131, 80, 25);
+    text-decoration: none;
+}
+
+nav ul li a: hover{
+    color: rgb(194,171,66);
+    text-decoration: none;
+}
+
+li{
+    display:list-item;
+    margin-bottom: 1em;
+    color: rgb(131, 80, 25);
+}
+
+ul{
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0rem 1.5rem 1rem 
+}
+
+.price{
+    color: rgb(194,171,66);
+	font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.title{
+    text-align: center;
+}
