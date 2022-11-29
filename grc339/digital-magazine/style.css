@@ -8,12 +8,8 @@ a{
     text-decoration: none;
 }
 
-.logo{
-    display:block;
-}
-
 h1 {
-    max-width: 3em;
+    max-width: 4em;
 }
 
 h2 {
@@ -39,12 +35,13 @@ h3 {
 p{
     font-family: josefin-sans;
     font-weight: 250;
+    font-size: 1.2em;
     color: rgb(122,68,25);
     margin-top: 0.3;
 }
 
 div.container {
-    max-width: 80em;
+    max-width: 50em;
     margin: 0 auto;
 }
 
@@ -61,7 +58,14 @@ figcaption{
     font-weight: 250;
     color: rgb(122,68,25);
     margin: 0;
-    padding-bottom: 1em;
+    padding-bottom: 0.2em;
+}
+
+div.gallery {
+    background-color: rgb(204,51,63);
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 img {
@@ -70,13 +74,12 @@ img {
 }
 
 ul {
-   
     font-family: josefin-sans, sans-serif;
     font-weight: 400;
     font-style: italic;
     padding: 0rem 1.5rem 1rem; 
     list-style-type: none;
-    padding: 2;
+    padding: 0.5em ;
 }
 
 nav ul{
@@ -89,6 +92,7 @@ nav ul li{
     list-style-type: none;
     text-align: left;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav ul li a{
@@ -96,12 +100,68 @@ nav ul li a{
     text-decoration: none;
 }
 
+div.gallery-container{
+        max-width:60em;
+        margin:auto;
+    }
+
+div.gallery-container input{
+        display:none;
+    }
+    
+.gallery img{
+        width:100%;
+    }
+    
+main.gallery{
+    position: relative; 
+    overflow: hidden;
+    padding: 3em;
+    min-height: 60em;
+    }
+
+main.gallery figcaption{
+    color:rgb(122,68,25);
+    margin:1em;
+    font-size: 1.5em;
+}
+    
+.gallery figure{
+    margin:0;
+    width: 100%;
+    position: absolute;
+    opacity:0;
+    transition: .5s;
+    }
+    
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+
+opacity: 1;
+    
+    }
+
+nav.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2em;
+    margin-top: .5em;
+}
+
+
 @media screen and (min-width: 60em){
     
 div.container{
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 0 4em;
+        max-width: 80em;
     }
     
 header{
@@ -120,6 +180,20 @@ section.mainstory{
         grid-row: 1/2;
         display: flex;
         flex-direction: column;
+    }
+
+section.mainstory a h3{
+        margin-top: 1em;
+    }  
+
+section.mainstory a p{
+        margin-top: 0.3em;
+        margin-bottom: 0em;
+
+    }
+
+section.secondary a p{
+       margin-top: 0.3em;
     }
 
 section.mainstory figure{
@@ -151,8 +225,49 @@ section.mainstory h3{
         margin: 0;
     }
 
+section.tertiary h3{
+        margin-top: 0em;
+    }
+
+section.tertiary a p{
+        margin-top: 0.3em;
+        margin-bottom: 2em;
+    }
+
 aside{
      grid-column: 2/3;   
     }
+
+.personal-info h3{
+      color: rgb(204,51,63);
+    font-size: 1.5em;
+    font-family: josefin-sans;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;  
+    }
+
+.newsletter-field ul{
+     color: rgb(122,68,25);   
+    }
+
+.newsletter-field ul li{
+    font-family: josefin-sans;
+    font-weight: 250;
+    font-size: 1.2em;
+    color: rgb(122,68,25);
+    }
+
+.newsletter-field ul li label{
+    font-family: josefin-sans;
+    font-weight: 250;
+    font-size: 1.2em;
+    color: rgb(122,68,25);
+    }
     
-}
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	flex: 1 0 30em;
+	box-sizing: border-box;
