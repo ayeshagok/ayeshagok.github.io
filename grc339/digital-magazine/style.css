@@ -155,6 +155,7 @@ nav.gallery {
 }
 
 
+
 @media screen and (min-width: 60em){
     
 div.container{
@@ -237,9 +238,14 @@ section.tertiary a p{
 aside{
      grid-column: 2/3;   
     }
-
+    
+div.subscription-container{
+        max-width: 60em;
+        margin:auto;
+    }
+    
 .personal-info h3{
-      color: rgb(204,51,63);
+    color: rgb(204,51,63);
     font-size: 1.5em;
     font-family: josefin-sans;
     font-weight: 400;
@@ -267,7 +273,23 @@ aside{
     
 section.personal-info ul li input[type="text"],
 section ul li input[type="email"],
-section ul li input[type="tel"],
 section ul li select {
 	flex: 1 0 30em;
-	box-sizing: border-box;
+    }
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+    font-family: josefin-sans;
+    font-weight: 500;
+    font-style: normal;
+}
+    
+button{
+        font-family: josefin-sans;
+        padding:0.8em;
+        font-size:1em;
+        color: rgb(204,51,63);
+    }
+}
